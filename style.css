@@ -13,3 +13,198 @@ body {
 main {
   flex: 1;
 }
+.hero-section {
+  background-image: url('slika-pozadine.jpg'); /* zameni imenom tvoje slike */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* tamni overlay */
+  z-index: -1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.o-nama-hero {
+  background-image: url('slika-o-nama.jpg'); /* Zameni imenom tvoje slike */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+
+.o-nama-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Tamni sloj preko slike */
+  z-index: 0;
+}
+
+.o-nama-hero .container {
+  position: relative;
+  z-index: 1;
+}
+/* Hero pozadina */
+.moj-tim-hero {
+  background-image: url('takovo2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+.moj-tim-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.moj-tim-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover efekti za tim */
+.team-item {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.team-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.02);
+}
+
+/* Scroll animacije */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-section {
+      background-image: url('slika-pozadine.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      position: relative;
+    }
+
+    .navbar {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.7rem;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+/* Navbar unutar hero sekcije - pozadina transparentna, ali tekst je svetao i veći */
+.hero-section nav.navbar {
+  background: transparent !important;
+  font-size: 1.3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Navbar brand veći i podebljan */
+.hero-section .navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff !important;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Linkovi u navbaru veći i sa senkom */
+.hero-section .nav-link {
+  font-size: 1.25rem;
+  color: #fff !important;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover efekat za linkove */
+.hero-section .nav-link:hover, 
+.hero-section .nav-link:focus {
+  color: #ffc107 !important; /* žuta */
+  text-shadow: 2px 2px 8px rgba(255, 193, 7, 0.8);
+}
+
+/* Hamburger meni dugme - svetlo */
+.hero-section .navbar-toggler {
+  border-color: rgba(255,255,255,0.7);
+}
+
+.hero-section .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Naslov unutar hero */
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+/* Animacija na hover naslova */
+.hero-section h1:hover {
+  transform: scale(1.05);
+  cursor: default;
+}
+
+/* Podnaslov unutar hero */
+.hero-section p.lead {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.hero-section p.lead:hover {
+  color: #ffc107;
+  cursor: default;
+}
+
+

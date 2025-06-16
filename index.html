@@ -5,41 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OKK Takovo - Početna</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigacija -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">OKK Takovo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="mojtim.html">Moj tim</a></li>
-          <li class="nav-item"><a class="nav-link" href="sekcije.html">Sekcije</a></li>
-          <li class="nav-item"><a class="nav-link" href="uspeh.html">Uspeh</a></li>
-          <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-        </ul>
+  <!-- Hero sekcija sa pozadinskom slikom i navbarom -->
+  <section class="hero-section text-white d-flex flex-column justify-content-between">
+    <!-- Navbar unutar hero sekcije -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold" href="index.html">OKK Takovo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link fs-5" href="mojtim.html">Moj tim</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="sekcije.html">Sekcije</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="uspeh.html">Uspeh</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-<main>
-  <!-- Hero sekcija -->
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h1 class="display-4">Dobrodošli na zvanični sajt OKK Takovo</h1>
-      <p class="lead">Pratite rezultate, statistike i vesti vezane za naš klub tokom cele sezone.</p>
+    </nav>
+
+    <!-- Naslov preko slike -->
+    <div class="container text-center mb-5">
+      <h1 class="display-3 fw-bold">Dobrodošli na zvanični sajt OKK Takovo</h1>
+      <p class="lead fw-semibold">Pratite rezultate, statistike i vesti vezane za naš klub tokom cele sezone.</p>
     </div>
   </section>
 
+<main>
   <!-- O klubu -->
   <section class="container my-5">
     <h2 class="mb-4">O klubu</h2>
     <p>
-      OKK Takovo je osnovan sa ciljem da promoviše sport, timski duh i razvoj mladih košarkaša u regionu. Klub je poznat po predanom radu sa omladinom i stalnom težnjom ka uspehu na terenu. Tokom godina, klub je iznedrio brojne talente i beležio značajne uspehe u ligi.
+      OKK Takovo je osnovan sa ciljem da promoviše sport, timski duh i razvoj mladih košarkaša u regionu. Klub je poznat po predanom radu sa omladinom i stalnoj težnji ka uspehu na terenu. Tokom godina, klub je iznedrio brojne talente i beležio značajne uspehe u ligi.
     </p>
   </section>
 
@@ -83,19 +86,19 @@
     </div>
   </section>
 </main>
-  <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-    <div class="container">
-      <p class="mb-1">&copy; 2025 OKK Takovo. Sva prava zadržana.</p>
-      <p class="mb-0">
-        Pratite nas na 
-        <a href="https://instagram.com/okk.takovo" class="text-white text-decoration-underline" target="_blank">Instagramu</a>
-      </p>
-    </div>
-  </footer>
 
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 OKK Takovo. Sva prava zadržana.</p>
+    <p class="mb-0">
+      Pratite nas na 
+      <a href="https://instagram.com/okk.takovo" class="text-white text-decoration-underline" target="_blank">Instagramu</a>
+    </p>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
